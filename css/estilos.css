@@ -1,0 +1,66 @@
+/*Fuentes externas*/
+/*Fuente usada en el header*/
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
+/*Estilos de neutralidad*/
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*Estilos generales del DOM*/
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 5px 70px;
+  background: black;
+  color: white;
+}
+
+header div p:first-child{
+  margin-right: 15px;
+}
+
+header div p{
+  display: inline-block;
+  font-family: 'Dosis', sans-serif;
+}
+
+header div p a{
+  color: white;
+  text-decoration: none;
+}
+
+header ul{
+  list-style: none;
+}
+
+header ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+/*Estilos de los iconos de redes sociales del header*/
+#ico-face:hover{
+  color:#3b5998;
+  background: white;
+  animation-delay: 100000s;
+}
+
+#ico-twitter:hover{
+  color:#00aced;
+}
+
+#ico-linkedin:hover{
+  color: #0077b5;
+  background: white;
+}
+
+/*Media query*/
+@media (max-width:650px) {
+  header{
+    display: none;
+  }
+}
