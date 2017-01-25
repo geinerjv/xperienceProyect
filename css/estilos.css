@@ -2,6 +2,14 @@
 /*Fuente usada en el header*/
 @import url('https://fonts.googleapis.com/css?family=Dosis');
 
+/*Fuente usada en los elementos del menu numero 1*/
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+/*Fuente usada en los elementos del menu numero 2*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+
+
 /*Estilos de neutralidad*/
 *{
   padding: 0;
@@ -57,10 +65,110 @@ header ul li a{
   color: #0077b5;
   background: white;
 }
+/*fin de los estilos de los iconos de redes sociales del header*/
+
+
+/*Estilo de la seccion banner*/
+#cont-ini{
+  background-image: url("../img/banner1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 630px;
+}
+
+#cont-ini #nav-movil{
+  width: 100%;
+  background: #332d2d;
+  display: none;
+}
+
+#cont-ini #nav-movil ul{
+  list-style: none;
+}
+
+#cont-ini #nav-movil ul li{
+  display: block;
+  border-bottom: 1px solid white;
+}
+
+#cont-ini #nav-movil ul li a{
+  text-decoration: none;
+  margin-left: 25px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+/**/
+
+#cont-ini2{
+  width: 100%;
+  padding: 0 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-items: center;
+}
+
+#logo span{
+  font-size: 70px;
+}
+
+#cont-ini #cont-ini2 #logo span{
+
+}
+
+#cont-ini #cont-ini2 #btn-menu{
+  display: none;
+}
+
+#cont-ini2 nav ul li{
+  display: inline-block;
+}
+
+#cont-ini2 nav ul li a{
+  text-decoration: none;
+  font-family: 'Anton', sans-serif;
+  color: black;
+  padding-left: 15px;
+}
+
+/*Clases del proyecto*/
+
+
+
+
 
 /*Media query*/
 @media (max-width:650px) {
   header{
     display: none;
   }
+
+  #cont-ini #nav-movil{
+    display: none;
+  }
+
+  #cont-ini #cont-ini2 #btn-menu{
+    display: block;
+    color: white;
+  }
+
+  #cont-ini #cont-ini2 #logo span{
+    color: white;
+  }
+
+  #cont-ini2{
+    background: black;
+  }
+
+  #cont-ini2 nav{
+    display: none;
+    width: 100%;
+  }
+
+  #cont-ini #nav-movil ul li a{
+    display: block;
+    padding: 15px;
+  }
+
 }
