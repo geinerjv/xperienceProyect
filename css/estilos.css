@@ -8,6 +8,12 @@
 /*Fuente usada en los elementos del menu numero 2*/
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+/*Fuente utilizado en los banner de tres*/
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+
+/*Fuente utilizada en el banner numero dos*/
+
+
 
 
 /*Estilos de neutralidad*/
@@ -132,9 +138,75 @@ header ul li a{
   padding-left: 15px;
 }
 
+#baner-bienvenida{
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-top: 50px;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: inherit;
+}
+
+#baner-bienvenida h2{
+  color: white;
+}
+
+#baner-bienvenida p{
+  color: white;
+}
+
+#tres-secciones{
+  padding: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-items: center;
+}
+
+.titulo-sec{
+  color: yellow;
+}
+
 /*Clases del proyecto*/
+.tres-sec{
+  width: auto;
+  /*height: auto;*/
 
+  padding: 15px;
+  overflow: hidden;
+}
 
+.tres-sec h4{
+  color: rgb(175, 24, 73);
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.tres-sec2 p{
+  width: 200px;
+  padding: 20px;
+  text-align: justify;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  background: white;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.tres-sec3{
+  border: 2px solid black;
+  padding: 0 0 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-items: center;
+  background: white;
+}
+
+.icon-arrow-right{
+  padding: 10px 10px 10px 10px;
+  border-left: 1px solid black;
+  text-align: center;
+  background: yellow;
+}
 
 
 
@@ -146,6 +218,12 @@ header ul li a{
 
   #cont-ini #nav-movil{
     display: none;
+  }
+
+  #baner-bienvenida{
+    padding-top: 35px;
+    padding-left: 35px;
+    padding-right: 35px;
   }
 
   #cont-ini #cont-ini2 #btn-menu{
@@ -170,5 +248,31 @@ header ul li a{
     display: block;
     padding: 15px;
   }
+}
 
+@media (max-width:860px) {
+  #cont-ini{
+    width: 100%;
+    height: 850px;
+  }
+
+  #tres-secciones{
+    display: block;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+  }
+  .tres-sec{
+    width: 200px;
+    margin: 0 auto;
+  }
+  .tres-sec2 p{
+    width: 170px;
+    padding: 10px;
+    text-align: justify;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+  }
 }
