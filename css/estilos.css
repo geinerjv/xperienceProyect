@@ -80,7 +80,7 @@ header ul li a{
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 630px;
+  height: 680px;
 }
 
 #cont-ini #nav-movil{
@@ -104,7 +104,7 @@ header ul li a{
   color: white;
   font-family: 'Open Sans', sans-serif;
 }
-/**/
+/*Fin de estilos de la seccion banner*/
 
 #cont-ini2{
   width: 100%;
@@ -162,6 +162,79 @@ header ul li a{
   align-items: center;
 }
 
+#cont-global-servi{
+  background-image: url("../img/banner3.jpg");
+  width: 100%;
+  height: 695px;
+  padding-top: 100px;
+}
+
+#cont-global-servi h2{
+  overflow: hidden;
+  font-size: 32px;
+  text-align: left;
+  font-family: 'Anton', sans-serif;
+  margin-bottom: 10px;
+  background: yellow;
+  padding: 10px;
+  display: inline-block;
+  margin-left: 120px;
+  border-radius: 5px;
+
+}
+
+#cont-global-servi #parrafo-bienve{
+  padding: 20px 120px;
+  margin-bottom: 20px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 18px;
+  background: white;
+  color: black;
+}
+
+#cont-cuadro-servi{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-items: center;
+  padding: 0 120px;
+}
+
+.ir-arriba {
+	display:none;
+	padding:15px;
+	background:#00000C;
+	font-size:15px;
+	color:#fff;
+	cursor:pointer;
+	position: fixed;
+	bottom:40px;
+	right:20px;
+}
+
+.cuadro-servi{
+  width: 200px;
+}
+
+.cuadro-servi h4{
+  text-align: center;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 20px;
+  border-top:2px solid black;
+  border-left:2px solid black;
+  border-right:2px solid black;
+  background: white;
+  color: rgb(175, 24, 73);
+  padding: 10px;
+}
+
+.cuadro-servi-interno{
+  border: 2px solid black;
+  padding: 20px;
+  background: white;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
 .titulo-sec{
   color: yellow;
 }
@@ -209,8 +282,31 @@ header ul li a{
 }
 
 
+/*
+Clases para los iconos de las tecnologias usadas
+*/
+.icon-html-five{
+  color: orange;
+}
+.icon-css3{
+  color: blue;
+}
+.icon-github{
+  color: purple;
+}
+.icon-git{
+  color:red;
+}
+.icon-appleinc{
+  color:gray;
+}
+.icon-android{
+  color:#99cc33;
+}
+
 
 /*Media query*/
+/*Habrán dos media query*/
 @media (max-width:650px) {
   header{
     display: none;
@@ -248,12 +344,14 @@ header ul li a{
     display: block;
     padding: 15px;
   }
+
 }
 
 @media (max-width:860px) {
   #cont-ini{
     width: 100%;
-    height: 850px;
+    height: auto;
+    padding-bottom: px;
   }
 
   #tres-secciones{
@@ -261,8 +359,33 @@ header ul li a{
     padding-top: 15px;
     padding-left: 10px;
     padding-right: 10px;
-
   }
+
+  #cont-global-servi{
+    height: auto;
+    padding-bottom: 10px;
+    padding-top: 40px;
+  }
+
+  #cont-global-servi h2{
+    text-align: center;
+    display: block;
+    width: 136px;
+    margin: 0  auto 10px auto;
+  }
+
+  #cont-global-servi #parrafo-bienve{
+    padding: 20px 30px;
+    text-align: center;
+  }
+
+  #cont-cuadro-servi{
+    display: block;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .tres-sec{
     width: 200px;
     margin: 0 auto;
@@ -275,4 +398,9 @@ header ul li a{
     border-bottom: 1px solid black;
     border-right: 1px solid black;
   }
+  .cuadro-servi{
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
 }

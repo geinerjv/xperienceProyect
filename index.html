@@ -12,6 +12,11 @@
   <title>Inicio - Home</title>
 </head>
 <body>
+
+  <!--Boton de ir arriba-->
+  <span class="ir-arriba icon-arrow-up2"></span>
+
+  <!--Aqui inicia la sección del header-->
   <header>
     <div>
       <p><span class="icon-mobile"> </span>62676077</p>
@@ -25,7 +30,10 @@
       </li>
     </ul>
   </header>
+  <!--Fin de la seccion del header-->
 
+
+  <!--Inicia la seccion de la portada de la pagina-->
   <section id="cont-ini">
     <div id="cont-ini2">
       <div id="logo">
@@ -35,7 +43,7 @@
       <nav>
         <ul>
           <li><a href="">Inicio</a></li>
-          <li><a href="">Servicios</a></li>
+          <li><a href="#servicios">Servicios</a></li>
           <li><a href="">Contacto</a></li>
           <li><a href="">Acerca de</a></li>
         </ul>
@@ -43,10 +51,10 @@
     </div>
     <nav id="nav-movil">
       <ul>
-        <li><a href="">Inicio</a></li>
-        <li><a href="">Servicios</a></li>
-        <li><a href="">Contacto</a></li>
-        <li><a href="">Acerca de</a></li>
+        <li><a class="accionado-a" href="">Inicio</a></li>
+        <li><a id="serv-menu-movil" class="accionado-a" href="#servicios">Servicios</a></li>
+        <li><a class="accionado-a" href="">Contacto</a></li>
+        <li><a class="accionado-a" href="">Acerca de</a></li>
       </ul>
     </nav>
 
@@ -84,6 +92,40 @@
         </div>
       </div>
     </section>
+  </section>
+  <!--Fin de la seccion de la portada de la pagina-->
+
+  <!--Aqui se inicia la seccion de servicios-->
+  <section id="cont-global-servi">
+    <h2 id="servicios">Servicios</h2>
+    <p id="parrafo-bienve">Bienvenidos a nuestro catálogo de servicios, será un gusto atenderle. <br>Para cualquier duda o consulta favor dirigirse a la sección de contacto.</p>
+    <div id="cont-cuadro-servi">
+      <div class="cuadro-servi">
+        <h4>Diseño de paginas web</h4>
+        <div class="cuadro-servi-interno">
+          <p>Le diseñamos su página web estatica a la medida y unica, de manera que su sitio web sea original en el mundo</p>
+          <span class="icon-html-five"></span>
+          <span class="icon-css3"></span>
+        </div>
+      </div>
+      <div class="cuadro-servi">
+        <h4>Desarrollo de aplicaciones web</h4>
+        <div class="cuadro-servi-interno">
+          <p>Desarrollamos su aplicación web desde cero y con los requerimientos que tu decidas</p>
+          <span class="icon-github"></span>
+          <span class="icon-git"></span>
+          <span class="icon-database"></span>
+        </div>
+      </div>
+      <div class="cuadro-servi">
+        <h4>Desarrollo de apps para móviles</h4>
+        <div class="cuadro-servi-interno">
+          <p>Le ofrecemos el desarrollo de aplicaciones móviles tanto como para Android como para IOS</p>
+          <span class="icon-appleinc"></span>
+          <span class="icon-android"></span>
+        </div>
+      </div>
+    </div>
   </section>
 
 
